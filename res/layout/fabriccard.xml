@@ -8,6 +8,8 @@
         android:id="@+id/imgFabric"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:layout_marginTop="9dp"
         android:src="@drawable/ic_launcher" >
     </ImageView>
 
@@ -20,13 +22,15 @@
             android:id="@+id/fabricName"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp" >
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="9dp" >
         </TextView>
 
         <TextView
             android:id="@+id/fabricPrice"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
             android:layout_marginLeft="15dp" >
         </TextView>
     </LinearLayout>

@@ -31,30 +31,35 @@
             android:id="@+id/CustomerDetail"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
             android:hint="Customer Detail" />
 
         <TextView
             android:id="@+id/customerName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
             android:hint="" />
 
         <TextView
             android:id="@+id/customerEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
             android:hint="" />
 
         <TextView
             android:id="@+id/customerMobile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
             android:hint="" />
 
         <TextView
             android:id="@+id/customerAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
             android:hint="" />
     </LinearLayout>
 
@@ -80,6 +85,7 @@
                 android:id="@+id/shirtDetail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
                 android:layout_weight="1"
                 android:hint="Shirt Detail" />
 
@@ -87,29 +93,29 @@
                 android:id="@+id/shirtChest"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="Shirt Detail" />
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1" />
 
             <TextView
                 android:id="@+id/shirtLength"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="Shirt Detail" />
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1" />
 
             <TextView
                 android:id="@+id/shirtSleaveLength"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="Shirt Detail" />
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1" />
 
             <TextView
                 android:id="@+id/shirtNeck"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="Shirt Detail" />
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1" />
         </LinearLayout>
 
         <LinearLayout
@@ -121,22 +127,23 @@
             android:orientation="vertical" >
 
             <TextView
-                android:id="@+id/pantDetail"
+                android:id="@+id/billpantDetail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Shirt Detail" />
+                android:layout_marginLeft="15dp"
+                android:hint="Pant Detail" />
 
             <TextView
                 android:id="@+id/pantLength"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Shirt Detail" />
+                android:layout_marginLeft="15dp" />
 
             <TextView
                 android:id="@+id/pantWaist"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Shirt Detail" />
+                android:layout_marginLeft="15dp" />
         </LinearLayout>
     </LinearLayout>
 
@@ -152,20 +159,21 @@
             android:id="@+id/fabricImage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
             android:src="@drawable/ic_launcher" />
 
         <TextView
             android:id="@+id/imageName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
+            android:layout_marginLeft="15dp"
             android:hint="FabricName" />
 
         <TextView
             android:id="@+id/imageAmount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
+            android:layout_marginLeft="15dp"
             android:hint="FabricAmount" />
     </LinearLayout>
 

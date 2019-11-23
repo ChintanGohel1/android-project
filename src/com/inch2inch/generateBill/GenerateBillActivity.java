@@ -43,15 +43,13 @@ public class GenerateBillActivity extends Activity {
 	textViewShirtChest=(TextView)findViewById(R.id.shirtChest);
 	textViewPantLength=(TextView)findViewById(R.id.pantLength);
 	textViewPantWaist=(TextView)findViewById(R.id.pantWaist);
-	textViewFabricName=(TextView)findViewById(R.id.fabricName);
-	textViewFabricPrice=(TextView)findViewById(R.id.fabricPrice);
+	textViewFabricName=(TextView)findViewById(R.id.imageName);
+	textViewFabricPrice=(TextView)findViewById(R.id.imageAmount);
 	textViewBillAmount = (TextView)findViewById(R.id.billAmount);
 	buttonGenerateBill=(Button)findViewById(R.id.btnGenerate);
 	fabricImage=(ImageView)findViewById(R.id.fabricImage);
 	
 	Intent intent = getIntent();
-//	intent.getIntExtra("customerId", 0);
-	
 								
 	JSONObject fabricJsonObject = GenericService.get("getFabric.php?fabricId="+intent.getIntExtra("fabricId", 0));
 	JSONObject customerJsonObject = GenericService.get("getCustomer.php?customerId="+intent.getIntExtra("customerId", 0));
@@ -59,20 +57,19 @@ public class GenerateBillActivity extends Activity {
 	
 	FabricBean fabricBean = GenericService.convertJsonObjectTOJavaObject(FabricBean.class,fabricJsonObject);
 	CustomerBean customerBean = GenericService.convertJsonObjectTOJavaObject(CustomerBean.class, customerJsonObject);
-	Log.d("asdfasd",fabricBean.toString());
-	textViewCustomerName.setText(customerBean.getName());
-	textViewCustomerMobile.setText(customerBean.getMobile());
-	textViewCustomerAddress.setText(customerBean.getAddress());
-	textViewCustomerEmail.setText(customerBean.getEmail());
-	textViewShirtNeck.setText(customerBean.getNeck()+"");
-	textViewShirtLength.setText(customerBean.getShirt_length()+"");
-	textViewPantWaist.setText(customerBean.getWaist()+"");
-	textViewPantLength.setText(customerBean.getPant_length()+"");
-	if(fabricBean.getFabric_type()!=null){
-	    textViewFabricName.setText(fabricBean.getFabric_type());    
-	}
+
+	textViewCustomerName.setText("Name : " + customerBean.getName());
+	textViewCustomerMobile.setText("Mobile : " + customerBean.getMobile());
+	textViewCustomerAddress.setText("Address : " + customerBean.getAddress());
+	textViewCustomerEmail.setText("Email : " + customerBean.getEmail());
+	textViewShirtNeck.setText("Neck : " + customerBean.getNeck());
+	textViewShirtChest.setText("Chest : " + customerBean.getChest());
+	textViewShirtLength.setText("Length : " + customerBean.getShirt_length());
+	textViewPantWaist.setText("Waist : " + customerBean.getWaist());
+	textViewPantLength.setText("Length : " + customerBean.getPant_length());
+	textViewFabricName.setText("Type : " + fabricBean.getFabric_type());    
 	
-	textViewFabricPrice.setText(fabricBean.getPrice()+"");
+	textViewFabricPrice.setText("Price : " + fabricBean.getPrice());
 	textViewBillAmount.setText(fabricBean.getPrice()+"");
 	try {
 	    fabricImage.setImageBitmap(new ImageAPI().execute(fabricBean.getImage_path()).get());
