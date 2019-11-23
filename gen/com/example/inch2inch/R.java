@@ -169,12 +169,13 @@ public final class R {
         public static final int CustomerDetail=0x7f090010;
         public static final int MeasureDetail=0x7f090015;
         public static final int ShirtDetail=0x7f090016;
-        public static final int action_settings=0x7f090032;
+        public static final int action_settings=0x7f090036;
         public static final int billAmount=0x7f090026;
         public static final int billpantDetail=0x7f09001d;
         public static final int btnAdd=0x7f09000d;
         public static final int btnAddCustomer=0x7f090028;
         public static final int btnGenerate=0x7f090027;
+        public static final int btnLogin=0x7f09002e;
         public static final int btnViewBill=0x7f09002a;
         public static final int btnViewCustomer=0x7f090029;
         public static final int customerAddress=0x7f090014;
@@ -188,20 +189,22 @@ public final class R {
         public static final int edtName=0x7f090001;
         public static final int edtNeck=0x7f090006;
         public static final int edtPantLength=0x7f09000c;
+        public static final int edtPassword=0x7f09002d;
         public static final int edtShirtLength=0x7f090009;
         public static final int edtSleaveLength=0x7f090008;
+        public static final int edtUserName=0x7f09002c;
         public static final int edtWaist=0x7f09000b;
         public static final int fabricImage=0x7f090021;
-        public static final int fabricName=0x7f090030;
-        public static final int fabricPrice=0x7f090031;
+        public static final int fabricName=0x7f090034;
+        public static final int fabricPrice=0x7f090035;
         public static final int imageAmount=0x7f090023;
         public static final int imageName=0x7f090022;
-        public static final int imgFabric=0x7f09002f;
+        public static final int imgFabric=0x7f090033;
         public static final int llbillTotal=0x7f090024;
         public static final int llcustomerDetail=0x7f09000f;
         public static final int llfabricDetail=0x7f090020;
-        public static final int lstViewCustomerView=0x7f09002c;
-        public static final int lstViewFabricsView=0x7f09002e;
+        public static final int lstViewCustomerView=0x7f090030;
+        public static final int lstViewFabricsView=0x7f090032;
         public static final int pantDetail=0x7f09001c;
         public static final int pantLength=0x7f09001e;
         public static final int pantWaist=0x7f09001f;
@@ -213,26 +216,29 @@ public final class R {
         public static final int totallbl=0x7f090025;
         public static final int tvAddUser=0x7f090000;
         public static final int tvGenerateBill=0x7f09000e;
+        public static final int tvLoginUser=0x7f09002b;
         public static final int tvPantMeasure=0x7f09000a;
         public static final int tvShirtMeasure=0x7f090005;
-        public static final int txtViewCustomers=0x7f09002b;
-        public static final int txtViewFabrics=0x7f09002d;
+        public static final int txtViewCustomers=0x7f09002f;
+        public static final int txtViewFabrics=0x7f090031;
     }
     public static final class layout {
         public static final int activity_add_customer=0x7f030000;
         public static final int activity_generate_bill=0x7f030001;
         public static final int activity_home=0x7f030002;
-        public static final int activity_view_customer=0x7f030003;
-        public static final int activity_view_fabric=0x7f030004;
-        public static final int card=0x7f030005;
-        public static final int fabriccard=0x7f030006;
+        public static final int activity_login=0x7f030003;
+        public static final int activity_view_customer=0x7f030004;
+        public static final int activity_view_fabric=0x7f030005;
+        public static final int card=0x7f030006;
+        public static final int fabriccard=0x7f030007;
     }
     public static final class menu {
         public static final int bill_detail=0x7f080000;
         public static final int generate_bill=0x7f080001;
         public static final int home=0x7f080002;
-        public static final int view_customer=0x7f080003;
-        public static final int view_fabric=0x7f080004;
+        public static final int login=0x7f080003;
+        public static final int view_customer=0x7f080004;
+        public static final int view_fabric=0x7f080005;
     }
     public static final class string {
         public static final int action_settings=0x7f060001;
@@ -241,6 +247,7 @@ public final class R {
         public static final int title_activity_bill_detail=0x7f060003;
         public static final int title_activity_generate_bill=0x7f060007;
         public static final int title_activity_home=0x7f060005;
+        public static final int title_activity_login=0x7f060008;
         public static final int title_activity_view_customer=0x7f060004;
         public static final int title_activity_view_fabric=0x7f060006;
     }

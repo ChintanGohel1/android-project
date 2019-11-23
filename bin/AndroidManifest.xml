@@ -18,11 +18,6 @@
         <activity
             android:name="com.example.inch2inch.HomeActivity"
             android:label="@string/title_activity_home" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="com.inch2inch.customer.addCustomer.AddCustomerActivity"
@@ -43,6 +38,14 @@
         <activity
             android:name="com.inch2inch.generateBill.GenerateBillActivity"
             android:label="@string/title_activity_generate_bill" >
+        </activity>
+        <activity
+            android:name="com.example.inch2inch.LoginActivity"
+            android:label="@string/title_activity_login" >
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 
