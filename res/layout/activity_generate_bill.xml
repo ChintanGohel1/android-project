@@ -1,0 +1,206 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LightGrey"
+    android:orientation="vertical"
+    android:weightSum="4"
+    tools:context=".GenerateBillActivity" >
+
+    <TextView
+        android:id="@+id/tvGenerateBill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="7dp"
+        android:gravity="center"
+        android:text="Generate Bill"
+        android:textColor="@color/Black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/llcustomerDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/LightGrey"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/CustomerDetail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Customer Detail" />
+
+        <TextView
+            android:id="@+id/customerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="" />
+
+        <TextView
+            android:id="@+id/customerEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="" />
+
+        <TextView
+            android:id="@+id/customerMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="" />
+
+        <TextView
+            android:id="@+id/customerAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/MeasureDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/LightGrey"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <LinearLayout
+            android:id="@+id/ShirtDetail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/LightGrey"
+            android:orientation="vertical"
+            android:weightSum="3" >
+
+            <TextView
+                android:id="@+id/shirtDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Shirt Detail" />
+
+            <TextView
+                android:id="@+id/shirtChest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Shirt Detail" />
+
+            <TextView
+                android:id="@+id/shirtLength"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Shirt Detail" />
+
+            <TextView
+                android:id="@+id/shirtSleaveLength"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Shirt Detail" />
+
+            <TextView
+                android:id="@+id/shirtNeck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Shirt Detail" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pantDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/LightGrey"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/pantDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Shirt Detail" />
+
+            <TextView
+                android:id="@+id/pantLength"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Shirt Detail" />
+
+            <TextView
+                android:id="@+id/pantWaist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Shirt Detail" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llfabricDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/LightGrey"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/fabricImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/imageName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:hint="FabricName" />
+
+        <TextView
+            android:id="@+id/imageAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:hint="FabricAmount" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llbillTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/LightGrey"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/totallbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:hint="Total" />
+
+        <TextView
+            android:id="@+id/billAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:hint="Fabric Amount" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnGenerate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="7dp"
+        android:background="@color/Goldenrod"
+        android:text="Generate" />
+
+</LinearLayout>
